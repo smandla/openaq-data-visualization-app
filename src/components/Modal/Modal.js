@@ -59,7 +59,9 @@ const Modal = (props) => {
     let month = myDate.substring(5, 7);
     let day = myDate.substring(8);
     let year = myDate.substring(0, 4);
-    myDate = `${props.months[month - 1]} ${day}, ${year}`;
+    console.log(month, day, year);
+    myDate = myDate === "" ? "" : `${props.months[month - 1]} ${day}, ${year}`;
+
     setDateFormat(myDate);
   };
   useEffect(() => {
