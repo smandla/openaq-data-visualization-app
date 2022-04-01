@@ -1,0 +1,49 @@
+.empty {
+  width: 100%;
+  height: 100%;
+  font-size: 3rem;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.filters {
+  margin: 5rem 16rem;
+  & h1 {
+    margin: 2rem 1rem;
+    color: #676b77;
+    font-size: 21px;
+  }
+}
+p {
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  padding-top: 3%;
+}
+.filter {
+  display: flex;
+  & button {
+    height: 100%;
+    font-family: inherit;
+    font-weight: bold;
+    border-radius: 4px;
+    cursor: pointer;
+    border: none;
+    user-select: none;
+
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0.3);
+    width: 10%;
+    margin-right: 3rem;
+    font-size: 20px;
+    height: 52px;
+    &:hover {
+      background-color: rgba(0, 0, 0, 0.3);
+      color: black;
+    }
+  }
+}
